@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SEb-uM-vWR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2oJ-8m-X05">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
@@ -79,6 +79,9 @@
                                                 <state key="normal" title="LOGIN WITH FB">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="facebookSignInBtnWasPressed:" destination="SEb-uM-vWR" eventType="touchUpInside" id="5oa-6k-E9Z"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fL-wt-aAj">
                                                 <rect key="frame" x="0.0" y="156.66666666666669" width="320" height="53"/>
@@ -87,6 +90,9 @@
                                                 <state key="normal" title="LOGIN WITH G+">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleSignInBtnWasPressed:" destination="SEb-uM-vWR" eventType="touchUpInside" id="cvH-Jg-yET"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meO-3W-MXA">
                                                 <rect key="frame" x="0.0" y="234.66666666666671" width="320" height="53.333333333333343"/>
@@ -105,6 +111,9 @@
                                         <state key="normal" title=" by email" image="emailIcon">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInWithEmailBtnWasPressed:" destination="SEb-uM-vWR" eventType="touchUpInside" id="oqK-c5-Rhm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
@@ -158,6 +167,9 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInBtnWasPressed:" destination="sSY-ad-g8r" eventType="touchUpInside" id="a9r-7u-FXV"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-7F-Zot">
                                 <rect key="frame" x="20" y="168" width="353" height="166.33333333333337"/>
@@ -198,6 +210,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="close"/>
+                                <connections>
+                                    <action selector="closeBtnWasPressed:" destination="sSY-ad-g8r" eventType="touchUpInside" id="80x-XS-Mmp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Sv-9D-XHO"/>
@@ -212,6 +227,10 @@
                             <constraint firstItem="4Sv-9D-XHO" firstAttribute="trailing" secondItem="Yme-7F-Zot" secondAttribute="trailing" constant="20" id="oCE-4f-y5r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="aNS-v5-3yl" id="8WA-Hf-3Nu"/>
+                        <outlet property="passwordField" destination="BNH-1y-MjN" id="OWq-Xm-sum"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLP-zS-gyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,7 +239,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Cex-Ve-nCa">
             <objects>
-                <tabBarController id="2oJ-8m-X05" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainVC" id="2oJ-8m-X05" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xBR-fc-8wd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
