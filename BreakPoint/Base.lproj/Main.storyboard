@@ -437,7 +437,7 @@
         <!--AuthVC-->
         <scene sceneID="Khr-Uf-uLR">
             <objects>
-                <viewController storyboardIdentifier="AuthVC" id="SEb-uM-vWR" customClass="AuthVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" modalPresentationStyle="fullScreen" id="SEb-uM-vWR" customClass="AuthVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uxo-lL-l85">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,7 +546,7 @@
         <!--LoginVC-->
         <scene sceneID="jMU-hZ-4eP">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="sSY-ad-g8r" customClass="LoginVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" modalPresentationStyle="fullScreen" id="sSY-ad-g8r" customClass="LoginVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21r-nF-asB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
