@@ -178,7 +178,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBv-ZN-ffP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="WBv-ZN-ffP">
                                         <rect key="frame" x="0.0" y="148.66666666666669" width="353" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -271,9 +271,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="cnu-ll-GOk"/>
                     <connections>
-                        <outlet property="descriptionTextField" destination="6ig-f6-vc7" id="b8r-e1-pY9"/>
+                        <outlet property="descriptionTextField" destination="XOG-2F-0sS" id="xFB-tF-yde"/>
                         <outlet property="doneBtn" destination="zPy-DO-3EJ" id="FuE-dJ-1kF"/>
-                        <outlet property="emailSearcTextField" destination="yEF-QN-Tbu" id="jH1-9v-Hj4"/>
+                        <outlet property="emailSearchTextField" destination="yEF-QN-Tbu" id="hBd-wi-TL9"/>
                         <outlet property="groupMemberLbl" destination="WBv-ZN-ffP" id="Tpv-Fo-1SH"/>
                         <outlet property="tableView" destination="L8q-7S-pwh" id="Q2n-bM-FmH"/>
                         <outlet property="titleTextField" destination="eus-GJ-Piq" id="A6s-LF-BhJ"/>
