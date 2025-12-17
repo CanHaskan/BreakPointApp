@@ -7,6 +7,8 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+import FBSDKLoginKit
 
 class AuthVC: UIViewController {
 
@@ -31,6 +33,42 @@ class AuthVC: UIViewController {
     }
     
     @IBAction func facebookSignInBtnWasPressed(_ sender: Any) {
+        let loginManager = LoginManager()
+
+        loginManager.logIn(
+            permissions: ["public_profile", "email"],
+            from: self
+        ) { result, error in
+
+            if let error = error {
+                print("Facebook login error:", error)
+                return
+            }
+
+            guard let result = result, !result.isCancelled else {
+                print("Facebook login cancelled")
+                return
+            }
+
+            guard let tokenString = AccessToken.current?.tokenString else {
+                print("No Facebook token")
+                return
+            }
+
+            let credential = FacebookAuthProvider.credential(
+                withAccessToken: tokenString
+            )
+
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    print("Firebase auth error:", error)
+                    return
+                }
+
+                // ✅ LOGIN BAŞARILI
+                self.dismiss(animated: true)
+            }
+        }
     }
     
 }
