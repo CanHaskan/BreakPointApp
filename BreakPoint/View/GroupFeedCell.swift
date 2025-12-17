@@ -19,10 +19,13 @@ class GroupFeedCell: UITableViewCell {
         self.contentLbl.text = content
     }
     
-    
-    
-    
-    
-    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // contentLbl için preferredMaxLayoutWidth set et
+        contentLbl.preferredMaxLayoutWidth = contentLbl.frame.width
+        contentLbl.setNeedsLayout()
+        contentLbl.layoutIfNeeded()
+    }
 
 }

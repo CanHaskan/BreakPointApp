@@ -20,5 +20,7 @@ class GroupCell: UITableViewCell {
         self.memberCountLbl.text = "\(memberCount) members."
     }
     
+    
+    
 
 }
