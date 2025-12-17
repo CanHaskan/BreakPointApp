@@ -1,7 +1,7 @@
+
 # Breakpoint
 
-Breakpoint is a social iOS app designed around a feed experience. Users can share posts, explore community content, and create or 
-join groups based on common interests. The app focuses on content sharing, group interaction, and a clean UIKit-based interface.
+Breakpoint is a social iOS app designed around a feed-based experience. Users can share posts, explore community content, and create or join groups based on common interests. The app focuses on content sharing, group interaction, and a clean UIKit-based interface.
 
 ## Features
 
@@ -21,14 +21,45 @@ join groups based on common interests. The app focuses on content sharing, group
 - Firebase Storage  
 - Facebook Login SDK  
 
+### 🔐 Authentication
+
+This app supports user authentication via Firebase, including Facebook Login.  
+To use Facebook authentication, you must provide your own Facebook App credentials.
+
 ## Screenshots
 
-![Auth Screen](assets/AuthVC.png)  
-![Feed Screen](assets/FeedVC.png)  
-![Create Post Screen](assets/CreatePostVC.png)  
-![Groups Screen](assets/GroupsVC.png)  
-![Create Group Screen](assets/CreateGroupVC.png)  
-![Group Feed Screen](assets/GroupFeedVC.png)  
+<table>
+  <tr>
+    <td align="center">
+      <strong>Auth Screen</strong><br/>
+      <img src="assets/AuthVC.png" width="250"/>
+    </td>
+    <td align="center">
+      <strong>Feed Screen</strong><br/>
+      <img src="assets/FeedVC.png" width="250"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Create Post Screen</strong><br/>
+      <img src="assets/CreatePostVC.png" width="250"/>
+    </td>
+    <td align="center">
+      <strong>Groups Screen</strong><br/>
+      <img src="assets/GroupsVC.png" width="250"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Create Group Screen</strong><br/>
+      <img src="assets/CreateGroupVC.png" width="250"/>
+    </td>
+    <td align="center">
+      <strong>Group Feed Screen</strong><br/>
+      <img src="assets/GroupFeedVC.png" width="250"/>
+    </td>
+  </tr>
+</table>
 
 ## Installation
 
@@ -42,4 +73,3 @@ join groups based on common interests. The app focuses on content sharing, group
 ## License
 
 This project is licensed under the MIT License.
-
