@@ -23,12 +23,12 @@ join groups based on common interests. The app focuses on content sharing, group
 
 ## Screenshots
 
-![Auth Screen](Assets/AuthVC.png)  
-![Feed Screen](Assets/FeedVC.png)  
-![Create Post Screen](Assets/CreatePostVC.png)  
-![Groups Screen](Assets/GroupsVC.png)  
-![Create Group Screen](Assets/CreateGroupVC.png)  
-![Group Feed Screen](Assets/GroupFeedVC.png)  
+![Auth Screen](assets/AuthVC.png)  
+![Feed Screen](assets/FeedVC.png)  
+![Create Post Screen](assets/CreatePostVC.png)  
+![Groups Screen](assets/GroupsVC.png)  
+![Create Group Screen](assets/CreateGroupVC.png)  
+![Group Feed Screen](assets/GroupFeedVC.png)  
 
 ## Installation
 
